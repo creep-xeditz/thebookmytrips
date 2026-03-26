@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Book My Trips | Premium Rishikesh Stays</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="logo.png">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Playfair+Display:wght@700;900&family=Inter:wght@300;400;600;900&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Dynamic Detail Page (Hidden by default) -->
+    <div id="details-page">
+        <div class="back-btn" onclick="window.history.back()"><i class="fas fa-arrow-left"></i> BACK TO EXPLORE</div>
+        <div id="details-content-box"></div>
+    </div>
+
+    <!-- Main Website Content -->
+    <div id="main-site">
+        <nav id="navbar">
+            <a href="#home" class="nav-logo-container">
+                <img src="logo.png" alt="The Book My Trips Logo" class="nav-logo-img">
+                <div class="logo-text">THE BOOK <span>MY TRIPS</span></div>
+            </a>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#camps">Camps</a>
+                <a href="#activities">Activities</a>
+                <a href="#location">Location</a>
+            </div>
+            <a href="tel:+919958234358" class="cta-call">
+                <i class="fa-solid fa-phone"></i> CALL ME NOW
+            </a>
+        </nav>
+
+        <section id="home">
+            <div class="hero-content">
+                <p>Escape • Explore • Experience</p>
+                <h1>The Book My Trips</h1>
+                <div>
+                    <a href="#camps" class="glass-btn">Start Your Journey</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CAMPS SECTION -->
+        <section id="camps">
+            <div class="section-header">
+                <h2>Our Resorts</h2>
+                <div class="line"></div>
+            </div>
+            <div class="camp-grid">
+                <!-- Each camp card with pop-out and zoom effect -->
+                <div class="camp-card" onclick="openDetails(1)">
+                    <div class="img-wrapper"><img src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?q=80&w=800" class="card-img"></div>
+                    <div class="card-info">
+                        <h3>Camp 1</h3>
+                        <span class="price-tag">₹1,800 / person</span>
+                        <span class="view-detail-btn">View Detail →</span>
+                    </div>
+                </div>
+                <div class="camp-card" onclick="openDetails(2)">
+                    <div class="img-wrapper"><img src="https://images.unsplash.com/photo-1533873984035-25970ab07461?q=80&w=800" class="card-img"></div>
+                    <div class="card-info">
+                        <h3>Camp 2</h3>
+                        <span class="price-tag">₹2,200 / person</span>
+                        <span class="view-detail-btn">View Detail →</span>
+                    </div>
+                </div>
+                <div class="camp-card" onclick="openDetails(3)">
+                    <div class="img-wrapper"><img src="https://images.unsplash.com/photo-1523987355523-c7b5b0dd90a7?q=80&w=800" class="card-img"></div>
+                    <div class="card-info">
+                        <h3>Camp 3</h3>
+                        <span class="price-tag">₹2,500 / person</span>
+                        <span class="view-detail-btn">View Detail →</span>
+                    </div>
+                </div>
+                <div class="camp-card" onclick="openDetails(4)">
+                    <div class="img-wrapper"><img src="https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?q=80&w=800" class="card-img"></div>
+                    <div class="card-info">
+                        <h3>Camp 4</h3>
+                        <span class="price-tag">₹3,000 / person</span>
+                        <span class="view-detail-btn">View Detail →</span>
+                    </div>
+                </div>
+                <div class="camp-card" onclick="openDetails(5)">
+                    <div class="img-wrapper"><img src="https://images.unsplash.com/photo-1621293954908-907159247fc8?q=80&w=800" class="card-img"></div>
+                    <div class="card-info">
+                        <h3>Camp 5</h3>
+                        <span class="price-tag">₹3,500 / person</span>
+                        <span class="view-detail-btn">View Detail →</span>
+                    </div>
+                </div>
+                <div class="camp-card" onclick="openDetails(6)">
+                    <div class="img-wrapper"><img src="https://images.unsplash.com/photo-1506461883276-594a12b11cf3?q=80&w=800" class="card-img"></div>
+                    <div class="card-info">
+                        <h3>Camp 6</h3>
+                        <span class="price-tag">₹4,000 / person</span>
+                        <span class="view-detail-btn">View Detail →</span>
+                    </div>
+                </div>
+                <div class="camp-card" onclick="openDetails(7)">
+                    <div class="img-wrapper"><img src="https://images.unsplash.com/photo-1521033335978-f1ca5d73958d?q=80&w=800" class="card-img"></div>
+                    <div class="card-info">
+                        <h3>Camp 7</h3>
+                        <span class="price-tag">₹2,000 / person</span>
+                        <span class="view-detail-btn">View Detail →</span>
+                    </div>
+                </div>
+                <div class="camp-card" onclick="openDetails(8)">
+                    <div class="img-wrapper"><img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?q=80&w=800" class="card-img"></div>
+                    <div class="card-info">
+                        <h3>Camp 8</h3>
+                        <span class="price-tag">₹4,500 / person</span>
+                        <span class="view-detail-btn">View Detail →</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ACTIVITIES SECTION -->
+        <section id="activities">
+            <div class="section-header">
+                <h2>Our Activities</h2>
+                <div class="line"></div>
+            </div>
+            <div class="activity-grid">
+                <div class="activity-card" onclick="window.open('https://wa.me/919958234358?text=Hello!%20I%20am%20interested%20in%20River%20Rafting%20activity.%20Please%20share%20details.')">
+                    <div class="img-wrapper"><img src="https://images.unsplash.com/photo-1530866495547-08497ff13ee2?q=80&w=800" class="card-img"></div>
+                    <div class="card-info">
+                        <h3>Rafting</h3>
+                        <span class="view-detail-btn">Inquire Now →</span>
+                    </div>
+                </div>
+                <div class="activity-card" onclick="window.open('https://wa.me/919958234358?text=Hello!%20I%20am%20interested%20in%20Trekking%20activity.%20Please%20share%20details.')">
+                    <div class="img-wrapper"><img src="https://images.unsplash.com/photo-1551632811-561732d1e306?q=80&w=800" class="card-img"></div>
+                    <div class="card-info">
+                        <h3>Trekking</h3>
+                        <span class="view-detail-btn">Inquire Now →</span>
+                    </div>
+                </div>
+                <div class="activity-card" onclick="window.open('https://wa.me/919958234358?text=Hello!%20I%20am%20interested%20in%20Bungee%20Jumping%20activity.%20Please%20share%20details.')">
+                    <div class="img-wrapper"><img src="https://images.unsplash.com/photo-1563841930606-67e2b64a8a2e?q=80&w=800" class="card-img"></div>
+                    <div class="card-info">
+                        <h3>Bungee Jumping</h3>
+                        <span class="view-detail-btn">Inquire Now →</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LOCATION SECTION -->
+        <section id="location">
+            <div class="location-container">
+                <div class="location-details">
+                    <h2>Find Us In Tapovan</h2>
+                    <p>Gateway to the Himalayas. We are located in the heart of Rishikesh, perfectly situated for rafting and trekking.</p>
+                    <div class="contact-item"><i class="fas fa-map-marker-alt"></i><span>Tapovan, Rishikesh</span></div>
+                    <div class="contact-item"><i class="fas fa-envelope"></i><a href="mailto:thebookmytrips@gmail.com">thebookmytrips@gmail.com</a></div>
+                    <div class="contact-item"><i class="fas fa-phone-alt"></i><a href="tel:+919958234358">+91 99582 34358</a></div>
+                </div>
+                <div class="map-box">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13788.75128362629!2d78.324888!3d30.134762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3909162986420a85%3A0x868b1a37a911a308!2sTapovan%2C%20Rishikesh%2C%20Uttarakhand!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" width="100%" height="100%" style="border:0; filter: invert(90%) hue-rotate(180deg);" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-brand-container">
+                <img src="logo.png" alt="Logo" class="footer-logo-img">
+                <div class="footer-brand-text">THE BOOK <span>MY TRIPS</span></div>
+            </div>
+            <p>&copy; 2026 THE BOOK MY TRIPS. ALL RIGHTS RESERVED.</p>
+        </footer>
+    </div>
+
+    <!-- Link JS -->
+    <script src="script.js"></script>
+</body>
+</html>
