@@ -141,7 +141,7 @@ function openDetails(id) {
                 <div class="amenity"><i class="fas fa-fire"></i> Bonfire</div>
                 <div class="amenity"><i class="fas fa-wifi"></i> Free Wifi</div>
             </div>
-            <a href="https://wa.me/919958234358?text=${encodeURIComponent(camp.wa)}" class="cta-call" style="width: fit-content; margin: 0 auto 50px auto;">BOOK VIA WHATSAPP</a>
+            <a href="https://wa.me/919958234358?text=${encodeURIComponent(camp.wa)}" target="_blank" class="cta-call" style="width: fit-content; margin: 0 auto 50px auto;">BOOK VIA WHATSAPP</a>
         </div>
     `;
     document.getElementById('details-content-box').innerHTML = content;
